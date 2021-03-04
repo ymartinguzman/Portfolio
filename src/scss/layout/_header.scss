@@ -1,0 +1,48 @@
+.header {
+  height: 100vh;
+  background-image: url('/assets/images/timanfaya.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    &--language {
+      padding: 23px;
+    }
+
+    &--language-es {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    &--menu {
+      padding: 23px;
+    }
+    &--menu-es {
+      color: white;
+      // text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px;
+    }
+  }
+}
+.header__name {
+  margin-top: 240px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  outline: solid 2px white;
+
+  &--title {
+    text-transform: uppercase;
+    font-size: 48px;
+  }
+  &--subtitle {
+    font-size: 30px;
+  }
+}

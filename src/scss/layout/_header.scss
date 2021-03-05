@@ -1,6 +1,9 @@
 .header {
-  height: 100vh;
-  background-image: url('/assets/images/timanfaya.jpg');
+  // height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('/assets/images/forest.jpg');
+  background-color: rgb(160, 132, 96);
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,13 +33,15 @@
   }
 }
 .header__name {
-  margin-top: 240px;
+  // margin-top: 120px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: white;
   outline: solid 2px white;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &--title {
     text-transform: uppercase;

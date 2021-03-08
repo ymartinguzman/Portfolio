@@ -1,20 +1,25 @@
 .main {
-  background-color: #9dac9d;
+  background-color: #f0efeb;
+  padding: 0 150px;
   // height: 100vh;
 }
 .projects {
   text-align: center;
   &__title {
-    font-size: 30px;
+    font-size: 55px;
     padding: 20px;
+    color: #5f7e5f;
   }
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 45px;
-    grid-row-gap: 45px;
-    margin: 50px;
+    column-gap: 25px;
+    row-gap: 25px;
+    // margin: 50px;
+    // width: fit-content;
+    // left: 15%;
+    // position: sticky;
 
     &--container {
       width: auto;
@@ -30,4 +35,37 @@
       }
     }
   }
+  &__aside {
+    padding: 54px 0;
+    &-title {
+      font-size: 20px;
+      color: #5f7e5f;
+    }
+    &-grid {
+      // background-color: darkgray;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding: 30px 0;
+    }
+  }
+}
+.about {
+  text-align: center;
+  &__title {
+    font-size: 55px;
+    padding: 20px;
+    color: #5f7e5f;
+  }
+}
+.contact {
+  text-align: center;
+  &__title {
+    font-size: 55px;
+    padding: 20px;
+    color: #5f7e5f;
+  }
+}
+.bx {
+  font-size: 3em;
+  color: #5f7e5f;
 }

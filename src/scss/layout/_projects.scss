@@ -18,8 +18,8 @@
     flex-direction: row;
     &-img {
       max-width: 300px;
-
       border-radius: 13em;
+      border-style: outset;
       &--image {
         width: 100%;
         height: 100%;
@@ -65,12 +65,11 @@
     // position: sticky;
 
     &--container {
-      width: auto;
+      width: fit-content;
       height: 210px;
-      background-color: lightblue;
-      padding: 20px;
+      padding: 15px;
       border-radius: 15px;
-      background-color: #e8e3e6;
+      background-color: #5f7e5f;
 
       &-img {
         height: 180px;

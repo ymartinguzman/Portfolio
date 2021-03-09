@@ -57,12 +57,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 25px;
-    row-gap: 25px;
-    // margin: 50px;
-    // width: fit-content;
-    // left: 15%;
-    // position: sticky;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-items: center;
 
     &--container {
       width: fit-content;
@@ -73,15 +70,16 @@
 
       &-img {
         height: 180px;
-        width: 300px;
+        width: 400px;
       }
     }
   }
   &__aside {
     padding: 54px 0;
     &-title {
-      font-size: 20px;
+      font-size: 25px;
       color: #5f7e5f;
+      font-family: 'Caveat', cursive;
     }
     &-grid {
       // background-color: darkgray;

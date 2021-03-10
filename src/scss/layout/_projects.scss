@@ -52,6 +52,7 @@
     padding: 20px;
     color: #5f7e5f;
     font-family: 'Caveat', cursive;
+    text-decoration-line: underline;
   }
   &__grid {
     display: grid;
@@ -63,14 +64,13 @@
 
     &--container {
       width: fit-content;
-      height: 210px;
+      height: 300px;
       padding: 15px;
       border-radius: 15px;
-      background-color: #5f7e5f;
 
       &-img {
-        height: 180px;
-        width: 400px;
+        height: 300px;
+        width: 470px;
       }
     }
   }
@@ -80,6 +80,7 @@
       font-size: 25px;
       color: #5f7e5f;
       font-family: 'Caveat', cursive;
+      text-decoration-line: underline;
     }
     &-grid {
       // background-color: darkgray;

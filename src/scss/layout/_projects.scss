@@ -19,6 +19,7 @@
     &-rev {
       display: flex;
       flex-direction: row-reverse;
+      margin: 50px;
     }
     &-container {
       padding: 50px;
@@ -43,6 +44,12 @@
           padding: 10px;
           margin: 10px;
         }
+      }
+    }
+    &-image {
+      // width: -webkit-fill-available;
+      &--pic {
+        width: 800px;
       }
     }
   }

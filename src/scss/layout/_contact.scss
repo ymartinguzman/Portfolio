@@ -1,0 +1,13 @@
+.contact {
+  text-align: center;
+  &__title {
+    font-size: 55px;
+    padding: 20px;
+    color: #5f7e5f;
+    font-family: 'Caveat', cursive;
+  }
+  &__description {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
+}

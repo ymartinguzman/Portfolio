@@ -1,0 +1,50 @@
+.main {
+  background-color: #f0efeb;
+  padding: 0 150px;
+  // height: 100vh;
+}
+.about {
+  text-align: center;
+  padding-bottom: 85px;
+
+  &__title {
+    font-size: 55px;
+    padding: 60px 20px;
+    color: #5f7e5f;
+    font-family: 'Caveat', cursive;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    &-img {
+      max-width: 300px;
+      // border-radius: 13em;
+      // border-style: outset;
+      &--image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-description {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      &--myself {
+        padding: 10px;
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Lato', sans-serif;
+      }
+    }
+    &--letters {
+      // text-decoration: underline wavy #5f7e5f;
+      color: #5f7e5f;
+      font-weight: bold;
+    }
+  }
+}
+.bx {
+  font-size: 3em;
+  color: #5f7e5f;
+}

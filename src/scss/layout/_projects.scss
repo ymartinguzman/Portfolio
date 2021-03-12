@@ -20,21 +20,38 @@
   &__article {
     &-container {
       width: fit-content;
-      height: 380px;
+      // height: 380px;
+      background-color: aliceblue;
       padding: 15px;
       border-radius: 15px;
-      background-color: aliceblue;
 
       &--list {
         display: flex;
         flex-direction: row;
-        justify-content: left;
+        justify-content: center;
         &-item {
-          background-color: #ccc566;
+          background-color: #68c3a3;
           max-width: fit-content;
           padding: 10px;
           margin: 10px;
+          border-radius: 3px;
+          font-family: 'Lato', sans-serif;
+
+          color: white;
         }
+      }
+    }
+    &-links {
+      margin-top: 23px;
+
+      &--item {
+        background-color: #52b3d9;
+        padding: 15px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        color: white;
       }
     }
   }

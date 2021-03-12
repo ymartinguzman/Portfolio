@@ -16,7 +16,8 @@
     position: fixed;
     -webkit-backdrop-filter: contrast(0.5);
     backdrop-filter: contrast(0.5);
-    background-color: #5f7e5f;
+    // background-color: #5f7e5f;
+    background-color: #68c3a3;
     z-index: 990;
     opacity: 0.9;
 
@@ -36,7 +37,7 @@
       font-size: 25px;
     }
     &--menu-es {
-      color: #f0efeb;
+      color: white;
       // text-transform: uppercase;
       text-decoration: none;
       padding: 10px;

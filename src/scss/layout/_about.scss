@@ -1,3 +1,8 @@
+.main {
+  background-color: #f0efeb;
+  padding: 0 150px;
+  // height: 100vh;
+}
 .about {
   text-align: center;
   padding-bottom: 85px;
@@ -5,7 +10,7 @@
   &__title {
     font-size: 55px;
     padding: 60px 20px;
-    color: #5f7e5f;
+    // color: #5f7e5f;
     font-family: 'Caveat', cursive;
   }
   &__container {

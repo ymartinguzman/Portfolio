@@ -3,10 +3,10 @@
   padding-bottom: 85px;
   &__title {
     font-size: 55px;
-    padding: 20px 20px 60px;
-    color: #5f7e5f;
+    padding: 80px 20px 60px;
+    color: $color-tertiary;
     font-family: 'Caveat', cursive;
-    text-decoration-line: underline;
+    // text-decoration-line: underline;
   }
 
   &__grid {
@@ -20,8 +20,9 @@
   &__article {
     &-container {
       width: fit-content;
+      margin-top: 20px;
       // height: 380px;
-      background-color: aliceblue;
+      // background-color: aliceblue;
       padding: 15px;
       border-radius: 15px;
 
@@ -30,7 +31,7 @@
         flex-direction: row;
         justify-content: center;
         &-item {
-          background-color: #68c3a3;
+          background-color: $color-tertiary;
           max-width: fit-content;
           padding: 10px;
           margin: 10px;
@@ -45,7 +46,7 @@
       margin-top: 23px;
 
       &--item {
-        background-color: #52b3d9;
+        background-color: $color-extra;
         padding: 15px;
         text-transform: uppercase;
         border-radius: 3px;

@@ -1,5 +1,5 @@
 .main {
-  // background-color: #f0efeb;
+  background-color: $color-secondary;
   padding: 0 150px;
   // height: 100vh;
 }
@@ -9,8 +9,8 @@
 
   &__title {
     font-size: 55px;
-    padding: 60px 20px;
-    color: #5f7e5f;
+    padding: 80px 20px 60px;
+    color: $color-primary;
     font-family: 'Caveat', cursive;
   }
   &__container {
@@ -40,7 +40,7 @@
     }
     &--letters {
       // text-decoration: underline wavy #5f7e5f;
-      color: #5f7e5f;
+      color: $color-primary;
       font-weight: bold;
     }
   }

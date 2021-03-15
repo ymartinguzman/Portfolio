@@ -8,29 +8,31 @@
 .about {
   text-align: center;
   padding-bottom: 85px;
-  max-width: 60%;
+  max-width: 50%;
 
   &__title {
-    font-size: 55px;
+    font-size: 86px;
     padding: 80px 20px 60px;
     color: $color-tertiary;
     font-family: 'Caveat', cursive;
+    text-shadow: 2px 2px 0px white;
   }
   &__container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     &-img {
       max-width: 100%;
       // border-radius: 13em;
       // border-style: outset;
       &--image {
-        width: 40%;
+        width: 30%;
         height: 100%;
         object-fit: cover;
       }
     }
     &-description {
-      width: 60%;
+      width: 70%;
       padding-left: 20px;
       display: flex;
       flex-direction: column;
@@ -47,8 +49,4 @@
       font-weight: bold;
     }
   }
-}
-.bx {
-  font-size: 3em;
-  color: #5f7e5f;
 }

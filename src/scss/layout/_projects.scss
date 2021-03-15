@@ -4,10 +4,11 @@
   width: 100%;
 
   &__title {
-    font-size: 55px;
+    font-size: 86px;
     padding: 80px 20px 60px;
     color: $color-tertiary;
     font-family: 'Caveat', cursive;
+    text-shadow: 2px 2px 0px white;
     // text-decoration-line: underline;
   }
   &__container {
@@ -29,7 +30,7 @@
       }
     }
     &-info {
-      width: 50%;
+      width: 30%;
       &--title {
         text-align: left;
         font-family: 'Lato', sans-serif;

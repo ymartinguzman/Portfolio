@@ -9,14 +9,15 @@
   background-size: cover;
   &__nav {
     height: auto;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: flex-end;
     font-size: 20px;
     position: fixed;
+    top: 0;
+    left: 0;
     -webkit-backdrop-filter: contrast(0.5);
     backdrop-filter: contrast(0.5);
-    // background-color: #5f7e5f;
     background-color: $color-primary;
     z-index: 990;
     opacity: 0.9;
@@ -50,8 +51,6 @@
   }
 }
 .header__name {
-  // margin-top: 120px;
-  width: 600px;
   padding: 40px;
   outline-style: double;
   color: $color-secondary;

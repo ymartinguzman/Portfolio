@@ -5,14 +5,10 @@
     padding: 20px;
     color: $color-tertiary;
     font-family: 'Caveat', cursive;
-    text-shadow: 2px 2px 0px white;
+    text-shadow: 2px 2px 0px #5f9595;
   }
   &__description {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
   }
-}
-.bx {
-  font-size: 3em;
-  color: $color-extra;
 }

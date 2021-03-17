@@ -1,5 +1,5 @@
 .main {
-  background-color: $color-secondary;
+  // background-color: $color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,8 +14,8 @@
     font-size: 86px;
     padding: 80px 20px 60px;
     color: $color-tertiary;
-    font-family: 'Caveat', cursive;
-    text-shadow: 2px 2px 0px white;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 2px 0px $color-primary;
   }
   &__container {
     display: flex;
@@ -47,6 +47,23 @@
       // text-decoration: underline wavy #5f7e5f;
       color: $color-primary;
       font-weight: bold;
+    }
+  }
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    &-email,
+    &-cv {
+      margin-left: 25px;
+
+      &--btn {
+        padding: 10px;
+        background-color: $color-tertiary;
+        color: $color-primary;
+        border-radius: 6px;
+        font-size: 18px;
+      }
     }
   }
 }

@@ -52,7 +52,7 @@
 }
 .header__name {
   padding: 40px 60px;
-  outline-style: double;
+  outline-style: groove;
   color: $color-secondary;
   text-align: center;
   position: absolute;
@@ -61,20 +61,18 @@
   transform: translate(-50%, -50%);
 
   &--title {
-    color: $color-extra;
-    text-transform: uppercase;
-    font-size: 100px;
+    // color: $color-extra;
+    // text-transform: uppercase;
+    font-size: 90px;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
-
-    // font-family: 'Caveat', cursive;
     letter-spacing: 0.05em;
-    -webkit-text-stroke: 3px $color-tertiary;
-    text-shadow: 2px 2px 0px white;
+    // -webkit-text-stroke: 3px $color-tertiary;
+    text-shadow: 2px 2px 0px $color-tertiary;
   }
   &--subtitle {
     color: $color-tertiary;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
     font-family: 'Caveat', cursive;
   }

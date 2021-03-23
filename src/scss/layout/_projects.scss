@@ -1,55 +1,81 @@
 .projects {
   text-align: center;
   padding-bottom: 85px;
+  width: 100%;
+
   &__title {
-    font-size: 55px;
-    padding: 20px 20px 60px;
-    color: #5f7e5f;
-    font-family: 'Caveat', cursive;
-    text-decoration-line: underline;
+    font-size: 86px;
+    padding: 80px 20px 60px;
+    color: $color-secondary;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 2px 0px $color-primary;
+  }
+  &__container {
+    // width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
   }
   &__article {
     display: flex;
-    &-rev {
-      display: flex;
-      flex-direction: row-reverse;
-      margin: 50px;
-    }
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%;
+    align-items: center;
+    padding: 20px 0px;
     &-container {
-      padding: 50px;
-      width: 50%;
-      &--title {
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-        padding: 30px 0;
-      }
-      &--description {
-        font-size: 1.1rem;
-        margin-bottom: 30px;
-        padding-right: 5%;
-      }
-      &--list {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        &-item {
-          background-color: #ccc566;
-          max-width: fit-content;
-          padding: 10px;
-          margin: 10px;
+      width: 100%;
+      object-fit: cover;
+      // padding-bottom: 5em;
+      position: relative;
+      z-index: 1;
+      // border-radius: 20px;
+      transition: color 0.5s ease-out;
+      display: block;
+      transition: 1s ease-in-out;
+      &--img {
+        // width: 80%;
+        &:hover {
+          height: 0px;
+          transition: 1s ease-in-out;
         }
       }
     }
-    &-image {
-      // width: -webkit-fill-available;
-      &--pic {
-        width: 800px;
+    &-info {
+      width: 50%;
+      padding: 28px;
+      transform: translate(0px, -340px);
+      //box-shadow: 2px 2px 2px 2px $color-secondary;
+      box-shadow: 2px 2px 20px 20px $color-secondary;
+      // box-shadow: 0 1px 3px rgb(0, 0, 0, 2.4), 0 1px 2px rgb(0, 0, 0, 2.4);
+
+      &--title {
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 10px;
+      }
+      &--description {
+        text-align: left;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+      }
+      &--list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-top: 10px;
+
+        &-item {
+          padding: 10px;
+          background-color: $color-tertiary;
+          padding: 5px;
+          margin: 10px;
+          border-radius: 3px;
+          font-family: 'Lato', sans-serif;
+          color: white;
+        }
       }
     }
   }
-}
-
-.bx {
-  font-size: 3em;
-  color: #5f7e5f;
 }

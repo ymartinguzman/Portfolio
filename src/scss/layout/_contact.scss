@@ -1,10 +1,11 @@
 .contact {
   text-align: center;
   &__title {
-    font-size: 55px;
-    padding: 20px;
-    color: #5f7e5f;
-    font-family: 'Caveat', cursive;
+    font-size: 86px;
+    padding: 80px 20px 60px;
+    color: $color-secondary;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 2px 0px $color-primary;
   }
   &__description {
     font-family: 'Lato', sans-serif;

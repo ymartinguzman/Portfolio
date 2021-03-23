@@ -1,35 +1,42 @@
 .main {
-  background-color: #f0efeb;
-  padding: 0 150px;
+  // background-color: $color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   // height: 100vh;
 }
 .about {
   text-align: center;
   padding-bottom: 85px;
+  max-width: 50%;
 
   &__title {
-    font-size: 55px;
-    padding: 60px 20px;
-    // color: #5f7e5f;
-    font-family: 'Caveat', cursive;
+    font-size: 86px;
+    padding: 80px 20px 60px;
+    color: $color-secondary;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 2px 0px $color-primary;
   }
   &__container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-bottom: 25px;
     &-img {
-      max-width: 300px;
-      // border-radius: 13em;
-      // border-style: outset;
+      width: 30%;
+      // outline-style: groove;
+      // padding: 25px;
+      // color: white;
       &--image {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
       }
     }
     &-description {
-      padding-left: 20px;
+      width: 70%;
+      padding-left: 40px;
       display: flex;
       flex-direction: column;
+      line-height: 1.25;
       &--myself {
         padding: 10px;
         font-size: 20px;
@@ -39,8 +46,46 @@
     }
     &--letters {
       // text-decoration: underline wavy #5f7e5f;
-      color: #5f7e5f;
+      color: $color-primary;
       font-weight: bold;
     }
   }
+  &__aside {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+
+    :hover {
+      transform: scale(1.5);
+      transition: 1.9s ease;
+    }
+    &-global--text {
+      font-family: 'Lato', sans-serif;
+      // font-family: 'Caveat', cursive;
+      font-weight: 700;
+    }
+  }
+  &__contact {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    padding-bottom: 30px;
+    &-email,
+    &-cv {
+      margin-left: 60px;
+
+      &--btn {
+        padding: 12px;
+        background-color: $color-tertiary;
+        color: $color-primary;
+        border-radius: 6px;
+        font-size: 20px;
+        font-family: 'Caveat', cursive;
+      }
+    }
+  }
+}
+.bx {
+  font-size: 3em;
+  color: $color-primary;
 }

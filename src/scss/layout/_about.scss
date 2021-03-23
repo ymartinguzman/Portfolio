@@ -54,15 +54,16 @@
     display: flex;
     justify-content: space-between;
     padding-top: 45px;
-
     :hover {
       transform: scale(1.5);
       transition: 1.9s ease;
     }
+
     &-global--text {
       font-family: 'Lato', sans-serif;
       // font-family: 'Caveat', cursive;
       font-weight: 700;
+      color: $color-primary;
     }
   }
   &__contact {
@@ -74,13 +75,26 @@
     &-cv {
       margin-left: 60px;
 
+      :hover {
+        background-color: $color-secondary;
+        color: $color-basic;
+      }
+
       &--btn {
-        padding: 12px;
+        padding: 12px 24px;
         background-color: $color-tertiary;
         color: $color-primary;
         border-radius: 6px;
+        outline: none;
+        transition: all 0.3s ease-in-out;
         font-size: 20px;
         font-family: 'Caveat', cursive;
+        text-decoration: none;
+
+        :hover {
+          border-bottom-width: 0;
+          border-top-width: 4px;
+        }
       }
     }
   }

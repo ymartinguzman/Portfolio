@@ -63,20 +63,21 @@
   &--title {
     // color: $color-extra;
     text-transform: uppercase;
-    font-size: 90px;
-    font-weight: bold;
+    font-size: 75px;
+    font-weight: 700;
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.05em;
     color: $color-secondary;
+    //color: $color-secondary;
     // -webkit-text-stroke: 3px $color-tertiary;
-    text-shadow: 2px 2px 0px $color-primary;
+    text-shadow: 4px 4px 0px $color-primary;
   }
   &--subtitle {
     color: $color-tertiary;
     font-size: 40px;
     font-weight: 500;
     font-family: 'Caveat', cursive;
-    text-shadow: 2px 2px 0px $color-basic;
+    text-shadow: 2px 2px 0px #736532;
     letter-spacing: 0.05em;
   }
 }

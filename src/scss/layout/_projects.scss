@@ -46,7 +46,7 @@
     &-info {
       width: 60%;
       height: 400px;
-      padding: 0 102px;
+
       // transform: translate(0px, -385px);
       //box-shadow: 2px 2px 2px 2px $color-secondary;
       // box-shadow: 2px 2px 20px 20px $color-secondary;
@@ -71,8 +71,7 @@
         &-item {
           padding: 10px;
           background-color: $color-tertiary;
-          padding: 5px;
-          margin: 10px;
+          margin: 10px 10px 10px 0;
           border-radius: 3px;
           font-family: 'Lato', sans-serif;
           color: white;
@@ -83,6 +82,7 @@
 }
 .js-projects {
   position: absolute;
+  top: 0;
   height: 100%;
   width: 100%;
   opacity: 0.9;
@@ -98,9 +98,8 @@
   background: $color-secondary;
   color: $color-basic;
   padding: 10px;
-  transform: translate(0px, -385px);
+  // transform: translate(0px, -385px);
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
 }
 .js-text {
   display: none;

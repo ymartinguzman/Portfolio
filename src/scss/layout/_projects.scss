@@ -27,25 +27,16 @@
     &-container {
       width: 60%;
       object-fit: cover;
-      // padding-bottom: 5em;
       position: relative;
       z-index: 1;
-      // border-radius: 20px;
-      // transition: color 0.5s ease-out;
-      display: block;
-      transition: 1s ease-in-out;
 
       &--img {
         width: 100%;
-        // &:hover {
-        //   height: 0px;
-        //   transition: 1s ease-in-out;
-        // }
       }
     }
     &-info {
       width: 60%;
-      height: 400px;
+      height: 250px;
 
       // transform: translate(0px, -385px);
       //box-shadow: 2px 2px 2px 2px $color-secondary;
@@ -56,7 +47,7 @@
         text-align: left;
         font-family: 'Lato', sans-serif;
         padding-bottom: 10px;
-        // padding-top: 205px;
+        color: $color-primary;
       }
       &--description {
         text-align: left;
@@ -78,7 +69,8 @@
         }
       }
       &--links {
-        padding: 10px;
+        display: flex;
+
         &-item {
           padding: 10px;
           background-color: $color-tertiary;
@@ -87,6 +79,12 @@
           font-family: 'Caveat', cursive;
           color: $color-primary;
           text-decoration: none;
+          font-size: 20px;
+          &:hover {
+            background-color: $color-secondary;
+            color: $color-basic;
+            transition: 1s ease;
+          }
         }
       }
     }
@@ -106,12 +104,10 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  transition: opacity 0.5s;
+  transition: 1s ease-in-out;
   background: $color-secondary;
-  color: $color-basic;
+  color: black;
   padding: 10px;
-  // transform: translate(0px, -385px);
-  transition: all 0.3s ease-in-out;
 }
 .js-text {
   display: none;

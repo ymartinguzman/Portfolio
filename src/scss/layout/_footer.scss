@@ -1,3 +1,15 @@
 .footer {
-  height: 20vh;
+  display: flex;
+  justify-content: center;
+  background-color: $color-primary;
+  font-weight: bold;
+  padding: 20px;
+  &__small {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: $color-secondary;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
 }

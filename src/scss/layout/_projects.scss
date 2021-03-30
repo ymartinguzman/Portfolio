@@ -1,48 +1,63 @@
 .projects {
   text-align: center;
-  padding-bottom: 85px;
   width: 100%;
+  @media all and (min-width: 768px) {
+    padding-bottom: 85px;
+  }
 
   &__title {
-    font-size: 86px;
-    padding: 80px 20px 60px;
+    font-size: 50px;
+    padding: 40px 20px 40px;
     color: $color-secondary;
     font-family: 'Lato', sans-serif;
     text-shadow: 2px 2px 0px $color-primary;
+    @media all and (min-width: 768px) {
+      font-size: 86px;
+      padding: 80px 20px 80px;
+    }
   }
   &__container {
     // width: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+    }
   }
   &__article {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 50%;
+    max-width: 100%;
     align-items: center;
+    @media all and (min-width: 768px) {
+      max-width: 50%;
+    }
+
     // padding: 20px 0px;
     &-container {
-      width: 60%;
+      width: 80%;
       object-fit: cover;
       position: relative;
       z-index: 1;
+      @media all and (min-width: 768px) {
+        max-width: 60%;
+      }
 
       &--img {
         width: 100%;
       }
     }
     &-info {
-      width: 60%;
-      height: 250px;
-
-      // transform: translate(0px, -385px);
-      //box-shadow: 2px 2px 2px 2px $color-secondary;
-      // box-shadow: 2px 2px 20px 20px $color-secondary;
-      // box-shadow: 0 1px 3px rgb(0, 0, 0, 2.4), 0 1px 2px rgb(0, 0, 0, 2.4);
-
+      width: 80%;
+      height: auto;
+      padding-bottom: 40px;
+      @media all and (min-width: 768px) {
+        height: 250px;
+        width: 60%;
+      }
       &--title {
         text-align: left;
         font-family: 'Lato', sans-serif;
@@ -92,9 +107,10 @@
 }
 .js-projects {
   position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  top: 13%;
+  left: 17%;
+  height: 60%;
+  width: 65%;
   opacity: 0.9;
   display: flex;
   align-items: center;
@@ -102,13 +118,27 @@
   border-radius: 8px;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
+  color: $color-basic;
   line-height: 1.5;
   transition: 1s ease-in-out;
   background: $color-secondary;
   color: black;
   padding: 10px;
+  animation: scale 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .js-text {
   display: none;
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
 }

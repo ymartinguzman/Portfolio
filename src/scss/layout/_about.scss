@@ -1,0 +1,137 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about {
+  text-align: center;
+  padding-bottom: 45px;
+  max-width: 80%;
+  @media all and (min-width: 768px) {
+    padding-bottom: 85px;
+  }
+
+  &__title {
+    font-size: 50px;
+    padding: 60px 20px 40px;
+    color: $color-secondary;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 2px 0px $color-primary;
+    @media all and (min-width: 768px) {
+      font-size: 86px;
+      padding: 80px 20px 80px;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+    }
+    &-img {
+      width: 60%;
+      padding-bottom: 20px;
+      @media all and (min-width: 768px) {
+        width: 20%;
+      }
+      &--image {
+        width: 60%;
+        @media all and (min-width: 420px) {
+          width: 80%;
+        }
+        @media all and (min-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+    &-description {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+      @media all and (min-width: 768px) {
+        width: 50%;
+        padding-left: 40px;
+      }
+
+      &--myself {
+        padding: 10px;
+        font-size: 18px;
+        text-align: justify;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        @media all and (min-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+    &--letters {
+      color: $color-primary;
+      font-weight: bold;
+    }
+  }
+  &__aside {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    @media all and (min-width: 768px) {
+      justify-content: space-between;
+    }
+
+    &-global--text {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      color: $color-primary;
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: row;
+    @media all and (min-width: 768px) {
+      flex-direction: column;
+    }
+    &-btn {
+      margin: 25px 10px;
+      padding: 5px;
+      background-color: $color-tertiary;
+      color: $color-primary;
+      border-radius: 6px;
+      border-style: none;
+      @media all and (min-width: 768px) {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      @media all and (min-width: 1080px) {
+        margin-bottom: 40px;
+        margin-left: 50px;
+      }
+      &:hover {
+        background-color: $color-secondary;
+        color: $color-basic;
+        transition: 1s ease;
+      }
+
+      &--link {
+        font-size: 20px;
+        font-family: 'Caveat', cursive;
+        text-decoration: none;
+        color: $color-primary;
+      }
+    }
+  }
+}
+.bx {
+  font-size: 3em;
+  color: $color-primary;
+  padding-bottom: 5px;
+  padding: 10px;
+  &:hover {
+    transform: scale(1.2);
+    transition: 1.9s ease;
+    color: $color-extra;
+  }
+}

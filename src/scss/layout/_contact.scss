@@ -10,7 +10,7 @@
     font-size: 50px;
     padding: 40px 20px 40px;
     color: $color-secondary;
-    font-family: 'Lato', sans-serif;
+    font-family: $main-font;
     text-shadow: 2px 2px 0px $color-primary;
     @media all and (min-width: 768px) {
       font-size: 70px;
@@ -21,7 +21,7 @@
     }
   }
   &__description {
-    font-family: 'Lato', sans-serif;
+    font-family: $main-font;
     font-size: 18px;
     max-width: 90%;
     text-align: center;

@@ -1,7 +1,6 @@
 .header {
   background-image: linear-gradient(rgba(19, 8, 8, -0.7), rgba(0, 0, 0, -0.7)),
     url('../images/desktop.jpg');
-  background-color: #b7b7a4;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +26,7 @@
 
     &--language {
       padding: 23px;
-      font-family: 'Caveat', cursive;
+      font-family: $links-font;
     }
 
     &--language-es {
@@ -37,7 +36,7 @@
     }
     &--menu {
       padding: 13px;
-      font-family: 'Caveat', cursive;
+      font-family: $links-font;
       font-size: 18px;
       display: flex;
       @media all and (min-width: 768px) {
@@ -81,7 +80,7 @@
   &--title {
     font-size: 39px;
     font-weight: 700;
-    font-family: 'Lato', sans-serif;
+    font-family: $main-font;
     letter-spacing: 0.05em;
     color: $color-secondary;
     text-shadow: 2px 4px 0px $color-primary;
@@ -95,7 +94,7 @@
     color: $color-tertiary;
     font-size: 25px;
     font-weight: 500;
-    font-family: 'Caveat', cursive;
+    font-family: $links-font;
     text-shadow: 2px 2px 0px #736532;
     letter-spacing: 0.05em;
     animation: tracking 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;

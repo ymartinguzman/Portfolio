@@ -15,7 +15,7 @@
     font-size: 50px;
     padding: 60px 20px 40px;
     color: $color-secondary;
-    font-family: 'Lato', sans-serif;
+    font-family: $main-font;
     text-shadow: 2px 2px 0px $color-primary;
     @media all and (min-width: 768px) {
       font-size: 70px;
@@ -71,7 +71,7 @@
         padding: 10px;
         font-size: 18px;
         text-align: justify;
-        font-family: 'Lato', sans-serif;
+        font-family: $main-font;
         font-weight: 300;
         @media all and (min-width: 768px) {
           font-size: 20px;
@@ -93,7 +93,7 @@
     }
 
     &-global--text {
-      font-family: 'Lato', sans-serif;
+      font-family: $main-font;
       font-weight: 700;
       color: $color-primary;
     }
@@ -131,7 +131,7 @@
 
       &--link {
         font-size: 20px;
-        font-family: 'Caveat', cursive;
+        font-family: $links-font;
         text-decoration: none;
         color: $color-primary;
       }

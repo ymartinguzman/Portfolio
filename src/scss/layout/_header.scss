@@ -1,6 +1,6 @@
 .header {
   background-image: linear-gradient(rgba(19, 8, 8, -0.7), rgba(0, 0, 0, -0.7)),
-    url('./images/desktop.jpg');
+    url('../images/desktop.jpg');
   background-color: #b7b7a4;
   height: 100vh;
   background-position: center;
@@ -72,10 +72,10 @@
   }
   @media all and (min-width: 768px) {
     padding: 40px 60px;
-    width: 75%;
+    width: 78%;
   }
   @media all and (min-width: 1080px) {
-    width: 50%;
+    width: 56%;
   }
 
   &--title {

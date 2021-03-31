@@ -5,15 +5,13 @@ const description = document.querySelectorAll('.js-text');
 
 function showText(event) {
   const id = parseInt(event.currentTarget.id);
-  console.log(id);
-
-  description[id].classList.remove('js-text');
-  description[id].classList.add('js-projects');
+  description[id].classList.toggle('js-projects');
+  description[id].classList.toggle('js-text');
 }
 function hideText(event) {
   const id = event.currentTarget.id;
-  description[id].classList.add('js-text');
-  description[id].classList.remove('js-projects');
+  description[id].classList.toggle('js-text');
+  description[id].classList.toggle('js-projects');
 }
 
 for (let i = 0; i < containerText.length; i++) {

@@ -12,8 +12,11 @@
     font-family: 'Lato', sans-serif;
     text-shadow: 2px 2px 0px $color-primary;
     @media all and (min-width: 768px) {
-      font-size: 86px;
+      font-size: 70px;
       padding: 80px 20px 80px;
+    }
+    @media all and (min-width: 1080px) {
+      font-size: 86px;
     }
   }
   &__container {
@@ -114,7 +117,7 @@
   text-align: center;
   border-radius: 8px;
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-size: 9px;
   font-weight: 700;
   color: $color-basic;
   line-height: 1.5;
@@ -123,6 +126,15 @@
   color: black;
   padding: 10px;
   animation: scale 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  @media all and (min-width: 420px) {
+    font-size: 12px;
+  }
+  @media all and (min-width: 768px) {
+    font-size: 10px;
+  }
+  @media all and (min-width: 1080px) {
+    font-size: 14px;
+  }
 }
 .js-text {
   display: none;

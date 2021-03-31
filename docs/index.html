@@ -24,18 +24,44 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="header__nav">
         <ul class="header__nav--menu">
-          <li><a href="" title="" id="" class="header__nav--menu-es">Home</a></li>
           <li>
-            <a href="#about" title="" class="header__nav--menu-es">Sobre mí</a>
+            <a
+              href="#header"
+              alt=""
+              title="Haz clic aquí para ir al principio de la página"
+              class="header__nav--menu-es"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#projects" title="" class="header__nav--menu-es">Proyectos</a>
+            <a
+              href="#about"
+              alt=""
+              title="Haz clic aquí para ir a la sección Sobre mí"
+              class="header__nav--menu-es"
+              >Sobre mí</a
+            >
           </li>
           <li>
-            <a href="#contact" title="" class="header__nav--menu-es">Contacto</a>
+            <a
+              href="#projects"
+              alt=""
+              title="Haz clic aquí para ir a la sección Proyectos"
+              class="header__nav--menu-es"
+              >Proyectos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              alt=""
+              title="Haz clic aquí para ir a la sección Contacto"
+              class="header__nav--menu-es"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
@@ -52,8 +78,9 @@
         <article class="about__container">
           <div class="about__container-img">
             <img
-              src="./assets/images/yamira.png"
-              alt=""
+              src="../assets/images/yamira.png"
+              alt="Foto de perfil de Yamira Martín"
+              title="Yamira Martín"
               class="about__container-img--image"
             />
           </div>
@@ -81,50 +108,51 @@
           </div>
           <article class="about__contact">
             <div class="about__contact-btn" role="link">
-            <a href="mailto:yamiramartinguzman@gmail.com" class="about__contact-btn--link">Contacta conmigo</a>
+              <a href="mailto:yamiramartinguzman@gmail.com"         class="about__contact-btn--link"
+              alt="Enlace para contactar con Yamira Martín"
+              title="Haz clic aqui para contactar con Yamira Martín">Contacta conmigo</a>
             </div>
             <div class="about__contact-btn" role="link">
-              <a href="https://drive.google.com/drive/u/0/my-drive"                  class="about__contact-btn--link"
+              <a href="https://drive.google.com/file/d/1XQeZxFVag6DubriJqbdgbmNbO7ErrUSI/view"                  class="about__contact-btn--link"
+              alt="Enlace para descargar CV Yamira Martín"
+              title="Haz clic aquí para descargar CV Yamira Martín"
                 target="_blank"
               >Descarga mi CV</a
             >
             </div>
-        </article>
-        </article>
-        
-        <aside class="about__aside">
-          
+          </article>
+        </article>  
+        <aside class="about__aside">    
             <div class="about__aside-global">
-              <i class="bx bxl-html5"></i>
+              <i class="bx bxl-html5" alt="Logo HTML5" title="HTML5"></i>
               <p class="about__aside-global--text">HTML5</p>
             </div>
             <div class="about__aside-global">
-              <i class="bx bxl-css3"></i>
+              <i class="bx bxl-css3" alt="Logo CSS3" title="CSS3"></i>
               <p class="about__aside-global--text">CSS3</p>
             </div>
             <div class="about__aside-global">
-              <i class="bx bxl-javascript"></i>
+              <i class="bx bxl-javascript" alt="Logo JavaScript" title="JavaScript"></i>
               <p class="about__aside-global--text">JavaScript ES6</p>
             </div>
             <div class="about__aside-global">
-              <i class="bx bxl-sass"></i>
+              <i class="bx bxl-sass" alt="Logo Sass" title="Sass"></i>
               <p class="about__aside-global--text">Sass</p>
             </div>
             <div class="about__aside-global">
-              <i class="bx bxl-react"></i>
+              <i class="bx bxl-react" alt="Logo React" title="React"></i>
               <p class="about__aside-global--text">React</p>
             </div>
             <div class="about__aside-global">
-              <i class="bx bxl-git"></i>
+              <i class="bx bxl-git" alt="Logo Git" title="Git"></i>
             <p class="about__aside-global--text">Git</p></div>
               
             <div class="about__aside-global">
-              <i class='bx bxl-wordpress'></i>
+              <i class='bx bxl-wordpress' alt="Logo Wordpress" title="Wordpress"></i>
               <p class="about__aside-global--text">Wordpress</p>
             </div>
           </div>
-        </aside>
-        
+        </aside>  
       </section>
 
       <section class="projects" id="projects">
@@ -134,7 +162,8 @@
             <div class="projects__article-container js-containerText "id="0">
               <img
                 src="./assets/images/adivina-mockup.jpg"
-                alt=""
+                alt="Mockup del proyecto Adivina el número"
+                title="Descripción proyecto"
                 class="projects__article-container--img" 
               />
                 <p class="projects__article-info--description js-text" >Juego sencillo en el que debes adivinar el número secreto en el menor
@@ -150,15 +179,19 @@
               </ul>
               <div class="projects__article-info--links">
                 <a
-                href="https://ymartinguzman.github.io/Adivina-el-numero/"
-                target="_blank"
+                href="https://ymartinguzman.github.io/Adivina-el-numero/"          
                 class="projects__article-info--links-item"
+                alt="Enlace a la web"
+                title="Ver la web"
+                target="_blank"
                 >Web</a
               >
                 <a
                 href="https://github.com/ymartinguzman/Adivina-el-numero"
-                target="_blank"
                 class="projects__article-info--links-item"
+                alt="Enlace a Github"
+                title="Ver código"
+                target="_blank"
                 >Código</a
               >
               </div>
@@ -168,7 +201,8 @@
             <div class="projects__article-container js-containerText" id="1">
               <img
                 src="./assets/images/awesome-mockup.jpg"
-                alt=""
+                alt="Mockup del proyecto Awesome Profile Cards"
+                title="Descripción proyecto"
                 class="projects__article-container--img "
               />
                 <p class=" projects__article-info--description js-text" >Web App responsive para la creación de tarjetas de visita virtuales y personalizadas, con posibilidad de compartir en redes sociales o descargar.</p>
@@ -184,15 +218,19 @@
             </ul>
             <div class="projects__article-info--links">
               <a
-                href="https://martreyz.github.io/Project-promo-k-module-2-team-1/"
-                target="_blank"
+                href="https://martreyz.github.io/Project-promo-k-module-2-team-1/"         
                 class="projects__article-info--links-item"
+                alt="Enlace a la web"
+                title="Ver la web"
+                target="_blank"
                 >Web</a
               >
               <a
                 href="https://github.com/ymartinguzman/Awesome-Profile-Cards"
-                target="_blank"
                 class="projects__article-info--links-item"
+                alt="Enlace a Github"
+                title="Ver código"
+                target="_blank"
                 >Código</a
               >
               </div>
@@ -202,7 +240,8 @@
             <div class="projects__article-container js-containerText" id="2">
               <img
                 src="./assets/images/bingo-mockup.jpg"
-                alt=""
+                alt="Mockup del proyecto Bingo"
+                title="Descripción proyecto"
                 class="projects__article-container--img"
               />
               <p class="projects__article-info--description js-text" >Famoso juego en el que ir rellenando tu cartón según las bolitas que van
@@ -220,15 +259,19 @@
             </ul>
             <div class="projects__article-info--links">
               <a
-                href="https://ymartinguzman.github.io/Bingo/"
-                target="_blank"
+                href="https://ymartinguzman.github.io/Bingo/"         
                 class="projects__article-info--links-item"
+                alt="Enlace a la web"
+                title="Ver la web"
+                target="_blank"
                 >Web</a
               >
               <a
                 href="https://github.com/ymartinguzman/Bingo"
-                target="_blank"
                 class="projects__article-info--links-item"
+                alt="Enlace a Github"
+                title="Ver código"
+                target="_blank"
                 >Código</a
               >
             </div>
@@ -238,7 +281,8 @@
             <div class="projects__article-container js-containerText" id="3">
               <img
                 src="./assets/images/blumeflix-mockup.jpg"
-                alt=""
+                alt="Mockup del proyecto Blumeflix"
+                title="Descripción proyecto"
                 class="projects__article-container--img"
               />
               <p class="projects__article-info--description js-text " >Blumeflix es una aplicación de búsqueda de series que, a través de la
@@ -257,15 +301,20 @@
             </ul>
             <div class="projects__article-info--links">
               <a
-                href="https://ymartinguzman.github.io/Series-finder/"
-                target="_blank"
+                href="https://ymartinguzman.github.io/Series-finder/"        
                 class="projects__article-info--links-item"
+                alt="Enlace a la web"
+                title="Ver la web"
+                  target="_blank"
+
                 >Web</a
               >
               <a
                 href="https://github.com/ymartinguzman/Series-finder"
-                target="_blank"
                 class="projects__article-info--links-item"
+                alt="Enlace a Github"
+                title="Ver código"
+                target="_blank"
                 >Código</a
               >
             </div>
@@ -275,10 +324,11 @@
             <div class="projects__article-container js-containerText" id="4">
               <img
                 src="./assets/images/ninja-mockup.jpg"
-                alt=""
+                alt="Mockup del proyecto Ninja Coders"
+                title="Descripción proyecto"
                 class="projects__article-container--img"
               />
-              <p class="projects__article-info--description js-text " >Web responsive Mobile First para dar visibilidad a un equipo de
+              <p class="projects__article-info--description js-text " >Web responsive para dar visibilidad a un equipo de
                 desarrolladoras frontend junior. Consta de una landing con toda la
                 información sobre ellas y un formulario de contacto.</p>  
             </div>
@@ -293,15 +343,19 @@
             </ul>
             <div class="projects__article-info--links">
               <a
-                href="https://crisgarm.github.io/ninja-coders/"
-                target="_blank"
+                href="https://crisgarm.github.io/ninja-coders/"        
                 class="projects__article-info--links-item"
+                alt="Enlace a la web"
+                title="Ver la web"
+                target="_blank"
                 >Web</a
               >
               <a
-                href="https://github.com/ymartinguzman/Ninja-Coders"
-                target="_blank"
+                href="https://github.com/ymartinguzman/Ninja-Coders"          
                 class="projects__article-info--links-item"
+                alt="Enlace a Github"
+                title="Ver código"
+                target="_blank"
                 >Código</a
               >
             </div>
@@ -311,7 +365,8 @@
             <div class="projects__article-container js-containerText"id="5" >
               <img
                 src="./assets/images/rick-mockup.jpg"
-                alt=""
+                alt="Mockup del proyecto Rick y Morty"
+                title="Descripción proyecto"
                 class="projects__article-container--img"
               />
               <p class="projects__article-info--description js-text " >Web App responsive para la búsqueda de los diferentes personajes con
@@ -328,15 +383,19 @@
             </ul>
             <div class="projects__article-info--links">
               <a
-                href="https://ymartinguzman.github.io/Rick-and-Morty-characters-finder/#/"
-                target="_blank"
+                href="https://ymartinguzman.github.io/Rick-and-Morty-characters-finder/#/"         
                 class="projects__article-info--links-item"
+                alt="Enlace a la web"
+                title="Ver la web"
+                target="_blank"
                 >Web</a
               >
               <a
                 href="https://github.com/ymartinguzman/Rick-and-Morty-characters-finder"
-                target="_blank"
                 class="projects__article-info--links-item"
+                alt="Enlace a Github"
+                title="Ver código"
+                target="_blank"
                 >Código</a
               >
             </div>
@@ -357,13 +416,25 @@
           perfil profesional encaja en lo que buscas, ¡no dudes en contactar conmigo!
         </p>
         <div class="contact__container">
-          <a href="https://www.linkedin.com/in/yamiramartinguzman/" target="_blank"
+          <a
+            href="https://www.linkedin.com/in/yamiramartinguzman/"
+            alt="Icono de Linkedin"
+            title="Enlace a perfil de Linkedin de Yamira Martín"
+            target="_blank"
             ><i class="bx bxl-linkedin-square"></i
           ></a>
-          <a href="https://github.com/ymartinguzman" target="_blank"
+          <a
+            href="https://github.com/ymartinguzman"
+            alt="Icono de Github"
+            title="Enlace a perfil de Github de Yamira Martín"
+            target="_blank"
             ><i class="bx bxl-github"></i
           ></a>
-          <a href="mailto:yamiramartinguzman@gmail.com" target="_blank"
+          <a
+            href="mailto:yamiramartinguzman@gmail.com"
+            alt="Icono de email"
+            title="Enlace para enviar email a Yamira Martín"
+            target="_blank"
             ><i class="bx bxs-envelope"></i
           ></a>
         </div>

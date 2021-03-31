@@ -70,11 +70,12 @@
       &--myself {
         padding: 10px;
         font-size: 18px;
-        text-align: initial;
+        text-align: center;
         font-family: $main-font;
         font-weight: 300;
         @media all and (min-width: 768px) {
           font-size: 20px;
+          text-align: initial;
         }
       }
     }

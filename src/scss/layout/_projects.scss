@@ -34,6 +34,7 @@
     flex-wrap: wrap;
     max-width: 100%;
     align-items: center;
+
     @media all and (min-width: 768px) {
       max-width: 50%;
     }
@@ -42,6 +43,7 @@
       object-fit: cover;
       position: relative;
       z-index: 1;
+
       @media all and (min-width: 768px) {
         max-width: 60%;
       }

@@ -7,23 +7,23 @@
     padding-bottom: 85px;
   }
   &__title {
-    font-size: 50px;
     padding: 40px 20px 40px;
+    font-size: 50px;
     color: $color-secondary;
     font-family: $main-font;
     text-shadow: 2px 2px 0px $color-primary;
     @media all and (min-width: 768px) {
-      font-size: 70px;
       padding: 80px 20px 80px;
+      font-size: 70px;
     }
     @media all and (min-width: 1080px) {
       font-size: 86px;
     }
   }
   &__description {
+    max-width: 90%;
     font-family: $main-font;
     font-size: 18px;
-    max-width: 90%;
     text-align: center;
     font-weight: 300;
     line-height: 1.5;
@@ -41,9 +41,9 @@
 .bxl-linkedin-square,
 .bxl-github,
 .bxs-envelope {
-  font-size: 3em;
   padding: 0 20px;
   color: $color-tertiary;
+  font-size: 3em;
   @media all and (min-width: 768px) {
     font-size: 4em;
   }

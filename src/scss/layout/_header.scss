@@ -1,5 +1,5 @@
 .header {
-  background-image: linear-gradient(rgba(19, 8, 8, -0.7), rgba(0, 0, 0, -0.7)),
+  background-image: linear-gradient(rgba(19, 8, 8, 0.6), rgba(0, 0, 0, -0.7)),
     url('../images/desktop.jpg');
   height: 100vh;
   background-position: center;
@@ -7,14 +7,14 @@
   background-size: cover;
 
   &__nav {
-    height: auto;
-    width: 100vw;
     display: flex;
     justify-content: center;
-    font-size: 20px;
     position: fixed;
     top: 0;
     left: 0;
+    height: auto;
+    width: 100vw;
+    font-size: 20px;
     -webkit-backdrop-filter: contrast(0.5);
     backdrop-filter: contrast(0.5);
     background-color: $color-primary;
@@ -24,47 +24,37 @@
       justify-content: flex-end;
     }
 
-    &--language {
-      padding: 23px;
-      font-family: $links-font;
-    }
-
-    &--language-es {
-      color: #f0efeb;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
     &--menu {
+      display: flex;
       padding: 13px;
       font-family: $links-font;
       font-size: 18px;
-      display: flex;
       @media all and (min-width: 768px) {
+        justify-content: center;
         padding: 23px;
         font-size: 25px;
-        justify-content: center;
       }
     }
     &--menu-es {
+      padding: 10px;
       color: $color-tertiary;
       text-decoration: none;
-      padding: 10px;
     }
     &--menu-es:hover {
-      text-decoration: underline;
       color: $color-secondary;
+      text-decoration: underline;
     }
   }
 }
 .header__name {
-  padding: 25px 5px;
   width: 90%;
-  outline-style: groove;
-  color: $color-basic;
-  text-align: center;
+  padding: 25px 5px;
   position: absolute;
   top: 50%;
   left: 50%;
+  color: $color-basic;
+  outline-style: groove;
+  text-align: center;
   transform: translate(-50%, -50%);
   @media all and (min-width: 420px) {
     width: 65%;
@@ -78,12 +68,12 @@
   }
 
   &--title {
+    color: $color-secondary;
+    text-shadow: 2px 4px 0px $color-primary;
     font-size: 39px;
     font-weight: 700;
     font-family: $main-font;
     letter-spacing: 0.05em;
-    color: $color-secondary;
-    text-shadow: 2px 4px 0px $color-primary;
     animation: tracking 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
     @media all and (min-width: 768px) {
       font-size: 75px;

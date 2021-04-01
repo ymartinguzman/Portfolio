@@ -1,19 +1,19 @@
 .projects {
-  text-align: center;
   width: 100%;
+  text-align: center;
   @media all and (min-width: 768px) {
     padding-bottom: 85px;
   }
 
   &__title {
-    font-size: 50px;
     padding: 40px 20px 40px;
     color: $color-secondary;
+    font-size: 50px;
     font-family: $main-font;
     text-shadow: 2px 2px 0px $color-primary;
     @media all and (min-width: 768px) {
-      font-size: 70px;
       padding: 80px 20px 80px;
+      font-size: 70px;
     }
     @media all and (min-width: 1080px) {
       font-size: 86px;
@@ -61,10 +61,10 @@
         width: 60%;
       }
       &--title {
-        text-align: left;
-        font-family: $main-font;
         padding-bottom: 10px;
         color: $color-primary;
+        text-align: left;
+        font-family: $main-font;
       }
       &--description {
         text-align: left;
@@ -78,11 +78,11 @@
 
         &-item {
           padding: 3px;
-          background-color: $color-extra;
           margin: 10px 10px 10px 0;
+          background-color: $color-extra;
+          color: white;
           border-radius: 3px;
           font-family: $main-font;
-          color: white;
         }
       }
       &--links {
@@ -90,11 +90,11 @@
 
         &-item {
           padding: 10px;
-          background-color: $color-tertiary;
           margin: 13px 10px 10px 0;
+          background-color: $color-tertiary;
+          color: $color-primary;
           border-radius: 6px;
           font-family: $links-font;
-          color: $color-primary;
           text-decoration: none;
           font-size: 20px;
           &:hover {
@@ -108,25 +108,24 @@
   }
 }
 .js-projects {
+  display: flex;
+  align-items: center;
+  text-align: center;
   position: absolute;
   top: 13%;
   left: 17%;
   height: 60%;
   width: 65%;
+  padding: 10px;
+  background: $color-secondary;
+  color: black;
   opacity: 0.9;
-  display: flex;
-  align-items: center;
-  text-align: center;
   border-radius: 8px;
   font-family: $main-font;
   font-size: 9px;
   font-weight: 700;
-  color: $color-basic;
   line-height: 1.5;
   transition: 1s ease-in-out;
-  background: $color-secondary;
-  color: black;
-  padding: 10px;
   animation: scale 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   @media all and (min-width: 420px) {
     font-size: 12px;

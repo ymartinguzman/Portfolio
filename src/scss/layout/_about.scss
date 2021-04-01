@@ -4,22 +4,21 @@
   align-items: center;
 }
 .about {
-  text-align: center;
-  padding-bottom: 45px;
   max-width: 80%;
+  padding-bottom: 45px;
+  text-align: center;
   @media all and (min-width: 768px) {
     padding-bottom: 85px;
   }
-
   &__title {
-    font-size: 50px;
     padding: 60px 20px 40px;
     color: $color-secondary;
-    font-family: $main-font;
     text-shadow: 2px 2px 0px $color-primary;
+    font-size: 50px;
+    font-family: $main-font;
     @media all and (min-width: 768px) {
-      font-size: 70px;
       padding: 80px 20px 80px;
+      font-size: 70px;
     }
     @media all and (min-width: 1080px) {
       font-size: 86px;
@@ -55,9 +54,9 @@
       }
     }
     &-description {
-      width: 100%;
       display: flex;
       flex-direction: column;
+      width: 100%;
       line-height: 1.25;
       @media all and (min-width: 768px) {
         width: 100%;
@@ -94,9 +93,9 @@
     }
 
     &-global--text {
+      color: $color-primary;
       font-family: $main-font;
       font-weight: 700;
-      color: $color-primary;
     }
   }
   &__contact {
@@ -131,21 +130,22 @@
       }
 
       &--link {
+        color: $color-primary;
         font-size: 20px;
         font-family: $links-font;
         text-decoration: none;
-        color: $color-primary;
       }
     }
   }
 }
 .bx {
-  font-size: 3em;
-  color: $color-primary;
-  padding-bottom: 5px;
   padding: 10px;
+  padding-bottom: 5px;
+  color: $color-primary;
+  font-size: 3em;
+
   &:hover {
-    transition: 1s ease;
     color: $color-tertiary;
+    transition: 1s ease;
   }
 }

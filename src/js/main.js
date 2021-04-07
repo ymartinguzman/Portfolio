@@ -25,7 +25,6 @@ for (let i = 0; i < containerText.length; i++) {
 //Technologies
 function showTech(event) {
   const id = parseInt(event.currentTarget.id);
-  console.log(id);
   techName[id].classList.remove('js-title');
   techName[id].classList.add('js-tech');
 }
@@ -39,5 +38,3 @@ for (let i = 0; i < techContainer.length; i++) {
   techContainer[i].addEventListener('mouseover', showTech);
   techContainer[i].addEventListener('mouseout', hideTech);
 }
-console.log(techName.id);
-console.log(techContainer);

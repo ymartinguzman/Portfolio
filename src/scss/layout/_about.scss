@@ -85,8 +85,11 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 110px;
+    height: 200px;
     padding-top: 30px;
+    @media all and (min-width: 420px) {
+      height: 110px;
+    }
     @media all and (min-width: 768px) {
       justify-content: space-between;
       height: 50px;
@@ -121,6 +124,7 @@
       }
       @media all and (min-width: 1200px) {
         padding: 16px;
+        width: 170px;
       }
 
       &:hover {
@@ -131,7 +135,7 @@
 
       &--link {
         color: $color-primary;
-        font-size: 20px;
+        font-size: 22px;
         font-family: $links-font;
         text-decoration: none;
       }

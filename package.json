@@ -12,6 +12,7 @@
     "gulp-clean-css": "*",
     "gulp-combine-mq": "*",
     "gulp-concat": "*",
+    "gulp-favicons": "^3.0.0",
     "gulp-html-tag-include": "^1.0.1",
     "gulp-notify": "*",
     "gulp-plumber": "*",

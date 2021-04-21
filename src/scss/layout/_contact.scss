@@ -8,12 +8,12 @@
   }
   &__title {
     padding: 40px 20px 40px;
-    font-size: 50px;
+    font-size: 47px;
     color: $color-secondary;
     font-family: $main-font;
     text-shadow: 2px 2px 0px $color-primary;
     @media all and (min-width: 768px) {
-      padding: 80px 20px 80px;
+      padding: 20px 80px;
       font-size: 70px;
     }
     @media all and (min-width: 1080px) {
@@ -21,7 +21,7 @@
     }
   }
   &__description {
-    max-width: 90%;
+    width: 80%;
     font-family: $main-font;
     font-size: 18px;
     text-align: center;
@@ -34,8 +34,15 @@
   }
   &__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 45px 0;
+    @media all and (min-width: 420px) {
+      flex-wrap: nowrap;
+    }
+    &-up {
+      padding-bottom: 20px;
+    }
   }
 }
 .bxl-linkedin-square,

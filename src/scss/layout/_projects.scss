@@ -1,9 +1,9 @@
 .projects {
   width: 100%;
   text-align: center;
-  @media all and (min-width: 768px) {
-    padding-bottom: 85px;
-  }
+  // @media all and (min-width: 768px) {
+  //   padding-bottom: 45px;
+  // }
 
   &__title {
     padding: 40px 20px 40px;
@@ -138,6 +138,9 @@
   }
   @media all and (min-width: 1080px) {
     font-size: 14px;
+  }
+  @media all and (min-width: 1500px) {
+    font-size: 18px;
   }
 }
 .js-text {

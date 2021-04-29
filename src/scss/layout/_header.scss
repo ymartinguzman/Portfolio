@@ -50,7 +50,9 @@
         cursor: pointer;
       }
     }
-
+    &--burguer {
+      padding: 0 23px;
+    }
     &--menu {
       display: none;
 
@@ -72,8 +74,16 @@
       color: $color-secondary;
       text-decoration: underline;
     }
+    &--menu-contact {
+      font-size: 10px;
+      padding-top: 15px;
+      @media all and (min-width: 768px) {
+        display: none;
+      }
+    }
   }
 }
+
 .header__name {
   width: 90%;
   padding: 25px 5px;
@@ -121,6 +131,21 @@
     }
   }
 }
+.js-burguerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  padding: 0 23px 15px;
+  font-size: 25px;
+  font-family: $links-font;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: $color-primary;
+  animation: tracking-menu 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
 .bx-menu {
   padding: 10px;
   padding-bottom: 5px;
@@ -129,6 +154,13 @@
   @media all and (min-width: 768px) {
     display: none;
   }
+}
+.bx-x {
+  display: none;
+}
+
+.js-bxMenu {
+  color: $color-tertiary;
 }
 
 @keyframes tracking {
@@ -144,6 +176,19 @@
   100% {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tracking-menu {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
     opacity: 1;
   }
 }

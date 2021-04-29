@@ -10,6 +10,10 @@ const spanishBtn = document.querySelector('.js__btn-es');
 const englishBtn = document.querySelector('.js__btn-en');
 const english = document.querySelectorAll('.js-english');
 const spanish = document.querySelectorAll('.js-spanish');
+const burguerBtn = document.querySelector('.header__nav--burguer');
+const burguerList = document.querySelector('.header__nav--menu');
+const closeMenu = document.querySelector('.bx-menu');
+const closeBtn = document.querySelector('.bx-x');
 
 //Projects
 function showText(event) {
@@ -73,3 +77,12 @@ function changeToSpanish() {
 
 englishBtn.addEventListener('click', changeToEnglish);
 spanishBtn.addEventListener('click', changeToSpanish);
+
+//Burguer menu
+
+function displayMenu() {
+  burguerList.classList.remove('header__nav--display');
+  burguerList.classList.toggle('js-burguerMenu');
+}
+
+burguerBtn.addEventListener('click', displayMenu);

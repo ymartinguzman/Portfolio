@@ -8,7 +8,7 @@
 
   &__nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,9 +20,6 @@
     background-color: $color-primary;
     z-index: 990;
     opacity: 0.9;
-    @media all and (min-width: 420px) {
-      justify-content: space-between;
-    }
 
     &--btn {
       justify-content: center;
@@ -75,7 +72,9 @@
       text-decoration: underline;
     }
     &--menu-contact {
-      font-size: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      font-size: 7px;
       padding-top: 15px;
       @media all and (min-width: 768px) {
         display: none;
@@ -138,13 +137,15 @@
   align-items: center;
   width: inherit;
   padding: 0 23px 15px;
-  font-size: 25px;
+  font-size: 15px;
   font-family: $links-font;
   position: absolute;
   top: 64px;
   right: 0;
   background-color: $color-primary;
   animation: tracking-menu 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  @media all and (min-width: 420px) {
+  }
 }
 .bx-menu {
   padding: 10px;
